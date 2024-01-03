@@ -30,11 +30,10 @@ def load_file():
                 code += f"pyautogui.press('{interaction}')\n"
     
     save_file(code)
-    print(f"Archivo {code_name}.py creado exitosamente.")
+    print(f"Archivo {save_file_name}.py creado exitosamente.")
 
-        
 
-def run(code_name):
+def create_file(code_name):
     global save_file_name
     save_file_name = code_name
     load_file()
@@ -43,4 +42,4 @@ if __name__ == '__main__':
     code_name = input('Enter file name to code: ')
     print(f"Generando archivo {code_name}.py ...")
 
-    run(code_name)
+    create_file(code_name)

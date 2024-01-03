@@ -3,6 +3,7 @@ import pyautogui
 import keyboard
 import json
 from pynput import mouse
+import generate_code
 
 interactions = []
 isTerminate = False
@@ -55,11 +56,15 @@ def capture_input():
                 if not running:
                     break
 
-def run():
+def record():
     print("Leyendo teclado...")
     capture_input()
     print("Archivo 'interactions.json' generado.")
 
 if __name__ == '__main__':
     interactions = []
-    run()
+    code_name = input('Enter file name to code: ')
+
+    record()
+    generate_code.create_file(code_name)
+
