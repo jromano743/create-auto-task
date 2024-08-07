@@ -21,10 +21,10 @@ pip install -r requirements.txt
 ~~~
 
 ## How to use
-1. Run the "record.py" file and do your tasks. Then press "esc" two times to stop record. The "interactions.json" file will be generated.
+1. Run the **record.py** file and do your tasks. Then press "esc" two times to stop record. The **interactions.json** file will be generated.
 
-2. With interaction.json file generated , run the "generate_code.py" file.
+2. With **interaction.json** file generated , run the **generate_code.py** file.
 
-3. The "generated_file.py" file will generate a new file with the name your given. That file will have the **pyautogui** code to replicate the task.
+3. The **generated_file.py** file will generate a new file with the name your given. That file will have the **pyautogui** code to replicate the task.
 
 4. In your generated code you can modify the duration between movements of mouse.
