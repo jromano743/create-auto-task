@@ -1,0 +1,21 @@
+{
+  "format": "CAT",
+  "version": "1.0",
+  "id": "c4c40b2d-1234-4567-8901-123456789abc",
+  "metadata": {
+    "name": "Abrir terminal",
+    "description": "Abre una terminal y escribe un comando",
+    "created_at": "2026-10-01T12:00:00Z"
+  },
+  "settings": {
+    "error_policy": "STOP",
+    "fail_safe": true,
+    "speed": 1.0
+  },
+  "actions": [
+    {"id": 1, "command": "HOTKEY", "params": {"keys": ["CTRL", "ALT", "T"]}},
+    {"id": 2, "command": "WAIT", "params": {"seconds": 1.0}},
+    {"id": 3, "command": "TYPE", "params": {"text": "echo Hello CAT"}},
+    {"id": 4, "command": "KEY", "params": {"key": "ENTER"}}
+  ]
+}

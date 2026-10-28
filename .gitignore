@@ -1,2 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
 venv/
-__pycache__
+
+# IDE
+.idea/
+.vscode/
+
+# Testing and linting
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Build artifacts
+build/
+dist/
+*.spec.bak
+
+# Runtime data (never commit user tasks/database/logs by default)
+data/database/
+data/logs/
+data/config/
+
+# OS
+.DS_Store
+Thumbs.db
